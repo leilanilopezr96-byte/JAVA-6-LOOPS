@@ -48,7 +48,6 @@ public class Retos {
 //            }
 //        }
 
-
 //        // -- Reto 4
 //        Scanner scanner = new Scanner(System.in);
 //        int edadIngresada = 0;
@@ -75,76 +74,79 @@ public class Retos {
 //        }
 //        System.out.println("La prima mensual final es de: " + primaFinal);
 
+//        // -- Reto 5
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Por favor, ingrese su usuario: ");
+//        String usuario = scanner.nextLine();
+//        System.out.println("Por favor, ingrese su contraseña: ");
+//        String contrasena = scanner.nextLine();
+//        double saldo = 500;
+//        int opcion;
+//        int opcionDivisas;
+//        double saldoDivisas;
+//        double saldoUsd;
+//        do {
+//            System.out.println("MENÚ");
+//            System.out.println("1. Consultar saldo");
+//            System.out.println("2. Ingresar dinero");
+//            System.out.println("3. Retirar dinero");
+//            System.out.println("4. Consultar últimos movimientos");
+//            System.out.println("5. Convertir divisas");
+//            System.out.println("0. Salir...");
+//            opcion = scanner.nextInt();
+//            switch (opcion) {
+//                case 1:
+//                    System.out.println("Su saldo es de " + saldo + " pesos.");
+//                    break;
+//                case 2:
+//                    System.out.println("Por favor, ingrese dinero en la caja.");
+//                    break;
+//                case 3:
+//                    System.out.println("Usted cuenta con " + saldo + " pesos disponibles para retirar.");
+//                    break;
+//                case 4:
+//                    System.out.println("A continuación verá sus últimos movimientos.");
+//                    break;
+//                case 5:
+//                    System.out.println("Ha seleccionado la opción de convertir divisas.");
+//                    System.out.println("Por favor seleccione una de las siguientes 3 opciones:");
+//                    System.out.println("1. Conversión de MXN a USD");
+//                    System.out.println("2. Conversión de MXN a EUR");
+//                    System.out.println("3. Conversión de USD a EUR");
+//                    opcionDivisas = scanner.nextInt();
+//                    switch (opcionDivisas) {
+//                        case 1:
+//                            saldoDivisas = saldo * 0.06;
+//                            System.out.println("Su saldo de " + saldo + " pesos equivale a " + saldoDivisas + " USD.");
+//                        break;
+//                        case 2:
+//                            saldoDivisas = saldo * 0.05;
+//                            System.out.println("Su saldo de " + saldo + " pesos equivale a " + saldoDivisas + " EUR.");
+//                        break;
+//                        case 3:
+//                            saldoUsd = saldo * 0.06;
+//                            saldoDivisas = saldoUsd * 0.86;
+//                            System.out.println("Su saldo de " + saldoUsd + " USD equivale a " + saldoDivisas + " EUR.");
+//                        break;
+//                    }
+//                    break;
+//                case 0:
+//                    System.out.println("Saliendo del programa.");
+//                    break;
+//            }
+//        } while (opcion !=0);
 
-
-        // -- Reto 5
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Por favor, ingrese su usuario: ");
-        String usuario = scanner.nextLine();
-        System.out.println("Por favor, ingrese su contraseña: ");
-        String contrasena = scanner.nextLine();
-        double saldo = 500;
-        int opcion;
-        int opcionDivisas;
-        double saldoDivisas;
-        double saldoUsd;
-        do {
-            System.out.println("MENÚ");
-            System.out.println("1. Consultar saldo");
-            System.out.println("2. Ingresar dinero");
-            System.out.println("3. Retirar dinero");
-            System.out.println("4. Consultar últimos movimientos");
-            System.out.println("5. Convertir divisas");
-            System.out.println("0. Salir...");
-            opcion = scanner.nextInt();
-            switch (opcion) {
-                case 1:
-                    System.out.println("Su saldo es de " + saldo + " pesos.");
-                    break;
-                case 2:
-                    System.out.println("Por favor, ingrese dinero en la caja.");
-                    break;
-                case 3:
-                    System.out.println("Usted cuenta con " + saldo + " pesos disponibles para retirar.");
-                    break;
-                case 4:
-                    System.out.println("A continuación verá sus últimos movimientos.");
-                    break;
-                case 5:
-                    System.out.println("Ha seleccionado la opción de convertir divisas.");
-                    System.out.println("Por favor seleccione una de las siguientes 3 opciones:");
-                    System.out.println("1. Conversión de MXN a USD");
-                    System.out.println("2. Conversión de MXN a EUR");
-                    System.out.println("3. Conversión de USD a EUR");
-                    opcionDivisas = scanner.nextInt();
-                    switch (opcionDivisas) {
-                        case 1:
-                            saldoDivisas = saldo * 0.06;
-                            System.out.println("Su saldo de " + saldo + " pesos equivale a " + saldoDivisas + " USD.");
-                        break;
-                        case 2:
-                            saldoDivisas = saldo * 0.05;
-                            System.out.println("Su saldo de " + saldo + " pesos equivale a " + saldoDivisas + " EUR.");
-                        break;
-                        case 3:
-                            saldoUsd = saldo * 0.06;
-                            saldoDivisas = saldoUsd * 0.86;
-                            System.out.println("Su saldo de " + saldoUsd + " USD equivale a " + saldoDivisas + " EUR.");
-                        break;
-                    }
-                    break;
-                case 0:
-                    System.out.println("Saliendo del programa.");
-                    break;
-            }
-        } while (opcion !=0);
-
-
-        // -- Reto 6
-
-
-
-
-
+//        // -- Reto 6
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("¿Cuántos números de Fibonacci quiere ver?");
+//        int numeros = scanner.nextInt();
+//        int a = 0, b = 1;
+//        System.out.println("Secuencia de Fibonacci:");
+//        for (int i = 0; i < numeros; i++) {
+//            System.out.println(a + " ");
+//            int siguienteNumero = a + b;
+//            a = b;
+//            b = siguienteNumero;
+//        }
     }
 }
